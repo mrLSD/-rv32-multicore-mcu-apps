@@ -35,7 +35,6 @@ _start:
     addi x30, zero, 0
     addi x31, zero, 0
 
-    /* call main function */
     call core0_main
 1:
     j 1b

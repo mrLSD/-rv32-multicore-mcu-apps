@@ -1,4 +1,4 @@
-.PHONY: all clean
+.PHONY: all clean dump
 
 RISCVCC32=riscv32-unknown-elf-gcc
 RISCVCC32_OBJDUMP=riscv32-unknown-elf-objdump
@@ -14,7 +14,7 @@ ASM_OBJECT=$(patsubst $(SRC_DIR)/%.S,$(BUILD_DIR)/%.o,$(ASM_SOURCE))
 C_OBJECTS=$(patsubst $(SRC_DIR)/%.c,$(BUILD_DIR)/%.o,$(C_SOURCES))
 OBJECTS=$(ASM_OBJECT) $(C_OBJECTS)
 
-		TARGET=$(BUILD_DIR)/app.elf
+TARGET=$(BUILD_DIR)/app.elf
 
 all: $(TARGET)
 

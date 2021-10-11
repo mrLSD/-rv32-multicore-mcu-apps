@@ -4,7 +4,7 @@
 2. Set address for `core1` to execution function `core1_main`
 3. Enable code execution for `core1` of function `core1_main`
 
-### Build C
+### Build Rust
 
 - Build: `make`
 - Disassemble: `make dump`
